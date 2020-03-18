@@ -24,7 +24,7 @@ class NewVisitorTest(unittest.TestCase):
         #Find the ingredients section
         home_page_ingredients = self.browser.find_element_by_id("home_page_ingredients")
         self.assertEqual(
-            home_page_inredients.get_attribute("innerHTML"),
+            home_page_ingredients.get_attribute("innerHTML"),
             "Ingredients"
         )
 
@@ -34,7 +34,7 @@ class NewVisitorTest(unittest.TestCase):
         time.sleep(1)
         self.assertEqual(
             "http://localhost:8000/ingredients-list",
-            self.browser.getCurrentUrl()
+            self.browser.current_url
         )
 
         #Look at ingredients list title and header
@@ -51,7 +51,7 @@ class NewVisitorTest(unittest.TestCase):
         time.sleep(1)
         self.assertEqual(
             "http://localhost:8000/ingredients-detail",
-            self.browser.getCurrentUrl()
+            self.browser.current_url
         )
 
         #Look at ingredients detail title and header
@@ -68,7 +68,7 @@ class NewVisitorTest(unittest.TestCase):
         time.sleep(1)
         self.assertEqual(
             "http://localhost:8000/ingredients-list",
-            self.browser.getCurrentUrl()
+            self.browser.current_url
         )
 
         #Find and click button to ingredients update
@@ -77,7 +77,7 @@ class NewVisitorTest(unittest.TestCase):
         time.sleep(1)
         self.assertEqual(
             "http://localhost:8000/ingredients-update",
-            self.browser.getCurrentUrl()
+            self.browser.current_url
         )
 
         #Look at ingredients update title and header
@@ -94,7 +94,7 @@ class NewVisitorTest(unittest.TestCase):
         time.sleep(1)
         self.assertEqual(
             "http://localhost:8000/ingredients-list",
-            self.browser.getCurrentUrl()
+            self.browser.current_url
         )
 
         #Find and click button to ingredients create
@@ -103,7 +103,7 @@ class NewVisitorTest(unittest.TestCase):
         time.sleep(1)
         self.assertEqual(
             "http://localhost:8000/ingredients-create",
-            self.browser.getCurrentUrl()
+            self.browser.current_url
         )
 
         #Look at ingredients update title and header
@@ -120,7 +120,7 @@ class NewVisitorTest(unittest.TestCase):
         time.sleep(1)
         self.assertEqual(
             "http://localhost:8000/ingredients-list",
-            self.browser.getCurrentUrl()
+            self.browser.current_url
         )
 
         #Find and click back button to home page
@@ -129,7 +129,7 @@ class NewVisitorTest(unittest.TestCase):
         time.sleep(1)
         self.assertEqual(
             "http://localhost:8000",
-            self.browser.getCurrentUrl()
+            self.browser.current_url
         )
 
         #Find the recipes section
@@ -145,7 +145,7 @@ class NewVisitorTest(unittest.TestCase):
         time.sleep(1)
         self.assertEqual(
             "http://localhost:8000/recipes-list",
-            self.browser.getCurrentUrl()
+            self.browser.current_url
         )
 
         #Look at recipes list title and header
@@ -162,7 +162,7 @@ class NewVisitorTest(unittest.TestCase):
         time.sleep(1)
         self.assertEqual(
             "http://localhost:8000/recipes-detail",
-            self.browser.getCurrentUrl()
+            self.browser.current_url
         )
 
         #Look at recipes detail title and header
@@ -179,7 +179,7 @@ class NewVisitorTest(unittest.TestCase):
         time.sleep(1)
         self.assertEqual(
             "http://localhost:8000/recipes-list",
-            self.browser.getCurrentUrl()
+            self.browser.current_url
         )
 
         #Find and click button to recipes update
@@ -188,7 +188,7 @@ class NewVisitorTest(unittest.TestCase):
         time.sleep(1)
         self.assertEqual(
             "http://localhost:8000/recipes-update",
-            self.browser.getCurrentUrl()
+            self.browser.current_url
         )
 
         #Look at recipes update title and header
@@ -205,7 +205,7 @@ class NewVisitorTest(unittest.TestCase):
         time.sleep(1)
         self.assertEqual(
             "http://localhost:8000/recipes-list",
-            self.browser.getCurrentUrl()
+            self.browser.current_url
         )
 
         #Find and click button to recipes create
@@ -214,7 +214,7 @@ class NewVisitorTest(unittest.TestCase):
         time.sleep(1)
         self.assertEqual(
             "http://localhost:8000/recipes-create",
-            self.browser.getCurrentUrl()
+            self.browser.current_url
         )
 
         #Look at recipes update title and header
@@ -231,7 +231,7 @@ class NewVisitorTest(unittest.TestCase):
         time.sleep(1)
         self.assertEqual(
             "http://localhost:8000/recipes-list",
-            self.browser.getCurrentUrl()
+            self.browser.current_url
         )
 
         #Find and click back button to home page
@@ -240,7 +240,7 @@ class NewVisitorTest(unittest.TestCase):
         time.sleep(1)
         self.assertEqual(
             "http://localhost:8000",
-            self.browser.getCurrentUrl()
+            self.browser.current_url
         )
 
         #Find the orders section
@@ -256,7 +256,7 @@ class NewVisitorTest(unittest.TestCase):
         time.sleep(1)
         self.assertEqual(
             "http://localhost:8000/orders-list",
-            self.browser.getCurrentUrl()
+            self.browser.current_url
         )
 
         #Look at orders list title and header
@@ -273,7 +273,7 @@ class NewVisitorTest(unittest.TestCase):
         time.sleep(1)
         self.assertEqual(
             "http://localhost:8000/orders-detail",
-            self.browser.getCurrentUrl()
+            self.browser.current_url
         )
 
         #Look at orders detail title and header
@@ -290,7 +290,7 @@ class NewVisitorTest(unittest.TestCase):
         time.sleep(1)
         self.assertEqual(
             "http://localhost:8000/orders-list",
-            self.browser.getCurrentUrl()
+            self.browser.current_url
         )
 
         #Find and click button to orders update
@@ -299,7 +299,7 @@ class NewVisitorTest(unittest.TestCase):
         time.sleep(1)
         self.assertEqual(
             "http://localhost:8000/orders-update",
-            self.browser.getCurrentUrl()
+            self.browser.current_url
         )
 
         #Look at orders update title and header
@@ -316,7 +316,7 @@ class NewVisitorTest(unittest.TestCase):
         time.sleep(1)
         self.assertEqual(
             "http://localhost:8000/orders-list",
-            self.browser.getCurrentUrl()
+            self.browser.current_url
         )
 
         #Find and click button to orders create
@@ -325,7 +325,7 @@ class NewVisitorTest(unittest.TestCase):
         time.sleep(1)
         self.assertEqual(
             "http://localhost:8000/orders-create",
-            self.browser.getCurrentUrl()
+            self.browser.current_url
         )
 
         #Look at orders update title and header
@@ -342,7 +342,7 @@ class NewVisitorTest(unittest.TestCase):
         time.sleep(1)
         self.assertEqual(
             "http://localhost:8000/orders-list",
-            self.browser.getCurrentUrl()
+            self.browser.current_url
         )
 
         #Find and click back button to home page
@@ -351,7 +351,7 @@ class NewVisitorTest(unittest.TestCase):
         time.sleep(1)
         self.assertEqual(
             "http://localhost:8000",
-            self.browser.getCurrentUrl()
+            self.browser.current_url
         )
 
         self.fail("Finish the test")
