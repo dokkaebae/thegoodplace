@@ -18,16 +18,14 @@
             </tr>
           </thead>
           <tbody>
-            {% for object in object_list %}
               <tr>
-                <td>{{object.name}}</td>
+                <td></td>
                 <td>
                   <form method="get" action="http://localhost:8000/ingredients-detail">
                     <button type="submit" id="button_to_ingredients_detail">Go to detail</button>
                   </form>
                 </td>
               </tr>
-            {% endfor %}
           </tbody>
         </table>
     </div>
