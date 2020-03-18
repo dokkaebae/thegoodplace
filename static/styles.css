@@ -1,0 +1,31 @@
+body{
+  background: #DCD0C0;
+  font-family: 'Courier New', Courier, monospace;
+  color: #373737;
+}
+
+th{
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+.container {
+  background: #F4F4F4;
+  padding: 15px;
+  margin: 10px;
+}
+
+.table{
+  font-size: 20px;
+}
+
+#page_header {
+  font-family: Helvetica, sans-serif;
+  padding: 15px;
+  font-size: 40px;
+  text-align: center;
+  text-shadow: 3px 2px #A9A9A9;
+}

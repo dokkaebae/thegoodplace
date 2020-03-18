@@ -1,32 +1,36 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
   <head>
     <title>The Good Place FroYo Shop</title>
+
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/styles.css">
   </head>
 
   <body>
-    <div>
-      <h1 id="page_header">The Good Place FroYo Shop</h1>
+    <div class="col-lg-10 col-lg-10 mx-auto container">
+      <h1 id="page_header" class="col-lg-8">The Good Place FroYo Shop</h1>
     </div>
 
-    <div>
-      <h2 id="home_page_ingredients">Ingredients</h2>
+    <div class="col-lg-10 mx-auto container">
+      <h2 id="home_page_ingredients" class="col-lg-8 mx-auto">Ingredients</h2>
       <form method="get" action="http://localhost:8000/ingredients-list">
-        <button type="submit" id="button_to_ingredients">View available ingredients</button>
+        <button type="submit" id="button_to_ingredients" class="btn-block btn-outline-info">View available ingredients</button>
       </form>
     </div>
 
-    <div>
-      <h2 id="home_page_recipes">Recipes</h2>
+    <div class="col-lg-10 mx-auto container">
+      <h2 id="home_page_recipes" class="col-lg-8 mx-auto">Recipes</h2>
       <form method="get" action="http://localhost:8000/recipes-list">
-        <button type="submit" id="button_to_recipes">Go to recipes</button>
+        <button type="submit" id="button_to_recipes" class="btn-block btn-outline-info">Go to recipes</button>
       </form>
     </div>
 
-    <div>
-      <h2 id="home_page_orders">Orders</h2>
+    <div class="col-lg-10 mx-auto container">
+      <h2 id="home_page_orders" class="col-lg-8 mx-auto">Orders</h2>
       <form method="get" action="http://localhost:8000/orders-list">
-        <button type="submit" id="button_to_orders">Check current orders</button>
+        <button type="submit" id="button_to_orders" class="btn-block btn-outline-info">Check current orders</button>
       </form>
     </div>
   </body>
