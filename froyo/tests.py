@@ -60,3 +60,8 @@ class OrdersUpdatePageTest(TestCase):
     def test_orders_update_page_returns_correct_html(self):
         response = self.client.get('/orders-update')
         self.assertTemplateUsed(response, 'orders_update_form.html')
+
+class OrdersCreatePageTest(TestCase):
+    def test_orders_create_page_returns_correct_html(self):
+        response = self.client.get('/orders-create')
+        self.assertTemplateUsed(response, 'orders_create_form.html')
