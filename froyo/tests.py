@@ -72,3 +72,9 @@ class PageContainsCssTest(TestCase):
         html = response.content.decode('utf8')
         self.assertIn('<link rel="stylesheet" href="/static/bootstrap.min.css">', html)
         self.assertIn('<link rel="stylesheet" href="/static/styles.css">', html)
+
+    def test_ingredients_list_contains_css(self):
+        response = self.client.get('/ingredients-list')
+        html = response.content.decode('utf8')
+        self.assertIn('<link rel="stylesheet" href="/static/bootstrap.min.css">', html)
+        self.assertIn('<link rel="stylesheet" href="/static/styles.css">', html)
