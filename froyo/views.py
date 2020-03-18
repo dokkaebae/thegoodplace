@@ -1,7 +1,21 @@
-from django.shortcuts import render
+from django.views.generic.base import TemplateView
+from django.views.generic.list import ListView
 
-# Create your views here.
-home_page = "home_page.html"
+from .models import Ingredient
 
-def go_to_home_page(request):
-    return render(request, home_page)
+class HomePageView(TemplateView):
+    template_name = "home_page.html"
+
+class IngredientsListView(ListView):
+    template_name = "ingredients_list.html"
+
+    emptyIngredient = Ingredient(
+        name="",
+        quantity=""
+    )
+    emptyIngredient.save()
+
+    queryset = Ingredient.objects.all()
+    context = {
+        "object_list": queryset
+    }

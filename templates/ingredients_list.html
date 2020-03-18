@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ingredients - List</title>
+  </head>
+
+  <body>
+    <div>
+      <h1 id="page_header">Ingredients - List</h1>
+    </div>
+
+    <div>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Ingredient</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for object in object_list %}
+              <tr>
+                <td>{{object.name}}</td>
+                <td>
+                  <form>
+                    <button type="submit">Go to detail</button>
+                  </form>
+                </td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+    </div>
+  </body>
+</html>

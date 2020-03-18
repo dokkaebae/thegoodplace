@@ -1,8 +1,9 @@
-from django.contrib import admin
 from django.urls import path
 
-from .views import go_to_home_page
+from .views import HomePageView
+from .views import IngredientsListView
 
 urlpatterns = [
-    path('', go_to_home_page),
+    path('', HomePageView.as_view()),
+    path('ingredients-list', IngredientsListView.as_view())
 ]
