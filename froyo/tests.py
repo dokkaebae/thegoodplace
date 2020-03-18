@@ -30,3 +30,8 @@ class RecipesListPageTest(TestCase):
     def test_recipes_list_page_returns_correct_html(self):
         response = self.client.get('/recipes-list')
         self.assertTemplateUsed(response, 'recipes_list.html')
+
+class RecipesDetailPageTest(TestCase):
+    def test_recipes_detail_page_returns_correct_html(self):
+        response = self.client.get('/recipes-detail')
+        self.assertTemplateUsed(response, 'recipes_detail.html')
