@@ -152,7 +152,7 @@ class NewVisitorTest(unittest.TestCase):
         self.assertIn("Recipes - List", self.browser.title)
         recipes_list_header = self.browser.find_element_by_id("page_header")
         self.assertEqual(
-            ingredients_list_header.get_attribute("innerHTML"),
+            recipes_list_header.get_attribute("innerHTML"),
             "Recipes - List"
         )
 
