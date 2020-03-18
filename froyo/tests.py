@@ -50,3 +50,8 @@ class OrdersListPageTest(TestCase):
     def test_orders_list_page_returns_correct_html(self):
         response = self.client.get('/orders-list')
         self.assertTemplateUsed(response, 'orders_list.html')
+
+class OrdersDetailPageTest(TestCase):
+    def test_orders_detail_page_returns_correct_html(self):
+        response = self.client.get('/orders-detail')
+        self.assertTemplateUsed(response, 'orders_detail.html')
