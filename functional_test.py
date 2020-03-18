@@ -62,15 +62,6 @@ class NewVisitorTest(unittest.TestCase):
             "Ingredients - Detail"
         )
 
-        #Find and click back button to igredients list
-        back_button_to_ingredients_list_from_detail = self.browser.find_element_by_id("back_button")
-        back_button_to_ingredients_list_from_detail.click()
-        time.sleep(1)
-        self.assertEqual(
-            "http://localhost:8000/ingredients-list",
-            self.browser.current_url
-        )
-
         #Find and click button to ingredients update
         button_to_ingredients_update = self.browser.find_element_by_id("button_to_ingredients_update")
         button_to_ingredients_update.click()
@@ -88,9 +79,18 @@ class NewVisitorTest(unittest.TestCase):
             "Ingredients - Update"
         )
 
+        #Find and click back button to igredients detail
+        back_button_to_ingredients_detail_from_update = self.browser.find_element_by_id("back_button")
+        back_button_to_ingredients_detail_from_update.click()
+        time.sleep(1)
+        self.assertEqual(
+            "http://localhost:8000/ingredients-detail",
+            self.browser.current_url
+        )
+
         #Find and click back button to igredients list
-        back_button_to_ingredients_list_from_update = self.browser.find_element_by_id("back_button")
-        back_button_to_ingredients_list_from_update.click()
+        back_button_to_ingredients_list_from_detail = self.browser.find_element_by_id("back_button")
+        back_button_to_ingredients_list_from_detail.click()
         time.sleep(1)
         self.assertEqual(
             "http://localhost:8000/ingredients-list",
@@ -173,15 +173,6 @@ class NewVisitorTest(unittest.TestCase):
             "Recipes - Detail"
         )
 
-        #Find and click back button to recipes list
-        back_button_to_recipes_list_from_detail = self.browser.find_element_by_id("back_button")
-        back_button_to_recipes_list_from_detail.click()
-        time.sleep(1)
-        self.assertEqual(
-            "http://localhost:8000/recipes-list",
-            self.browser.current_url
-        )
-
         #Find and click button to recipes update
         button_to_recipes_update = self.browser.find_element_by_id("button_to_recipes_update")
         button_to_recipes_update.click()
@@ -199,9 +190,18 @@ class NewVisitorTest(unittest.TestCase):
             "Recipes - Update"
         )
 
+        #Find and click back button to recipes detail
+        back_button_to_recipes_detail_from_update = self.browser.find_element_by_id("back_button")
+        back_button_to_recipes_detail_from_update.click()
+        time.sleep(1)
+        self.assertEqual(
+            "http://localhost:8000/recipes-detail",
+            self.browser.current_url
+        )
+
         #Find and click back button to recipes list
-        back_button_to_recipes_list_from_update = self.browser.find_element_by_id("back_button")
-        back_button_to_recipes_list_from_update.click()
+        back_button_to_recipes_list_from_detail = self.browser.find_element_by_id("back_button")
+        back_button_to_recipes_list_from_detail.click()
         time.sleep(1)
         self.assertEqual(
             "http://localhost:8000/recipes-list",
@@ -284,15 +284,6 @@ class NewVisitorTest(unittest.TestCase):
             "Orders - Detail"
         )
 
-        #Find and click back button to orders list
-        back_button_to_orders_list_from_detail = self.browser.find_element_by_id("back_button")
-        back_button_to_orders_list_from_detail.click()
-        time.sleep(1)
-        self.assertEqual(
-            "http://localhost:8000/orders-list",
-            self.browser.current_url
-        )
-
         #Find and click button to orders update
         button_to_orders_update = self.browser.find_element_by_id("button_to_orders_update")
         button_to_orders_update.click()
@@ -310,9 +301,18 @@ class NewVisitorTest(unittest.TestCase):
             "Orders - Update"
         )
 
+        #Find and click back button to orders detail
+        back_button_to_orders_detail_from_update = self.browser.find_element_by_id("back_button")
+        back_button_to_orders_detail_from_update.click()
+        time.sleep(1)
+        self.assertEqual(
+            "http://localhost:8000/orders-list",
+            self.browser.current_url
+        )
+
         #Find and click back button to orders list
-        back_button_to_orders_list_from_update = self.browser.find_element_by_id("back_button")
-        back_button_to_orders_list_from_update.click()
+        back_button_to_orders_list_from_detail = self.browser.find_element_by_id("back_button")
+        back_button_to_orders_list_from_detail.click()
         time.sleep(1)
         self.assertEqual(
             "http://localhost:8000/orders-list",
