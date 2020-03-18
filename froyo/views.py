@@ -9,6 +9,7 @@ class HomePageView(TemplateView):
 class IngredientsListView(ListView):
     template_name = "ingredients_list.html"
 
+    Ingredient.objects.all().delete()
     emptyIngredient = Ingredient(
         name="",
         quantity=""
@@ -19,3 +20,6 @@ class IngredientsListView(ListView):
     context = {
         "object_list": queryset
     }
+
+class IngredientsDetailView(TemplateView):
+    template_name = "ingredients_detail.html"
