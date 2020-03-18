@@ -45,3 +45,8 @@ class RecipesCreatePageTest(TestCase):
     def test_recipes_create_page_returns_correct_html(self):
         response = self.client.get('/recipes-create')
         self.assertTemplateUsed(response, 'recipes_create_form.html')
+
+class OrdersListPageTest(TestCase):
+    def test_orders_list_page_returns_correct_html(self):
+        response = self.client.get('/orders-list')
+        self.assertTemplateUsed(response, 'orders_list.html')
