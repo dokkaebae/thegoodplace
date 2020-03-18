@@ -65,3 +65,10 @@ class OrdersCreatePageTest(TestCase):
     def test_orders_create_page_returns_correct_html(self):
         response = self.client.get('/orders-create')
         self.assertTemplateUsed(response, 'orders_create_form.html')
+
+class PageContainsCssTest(TestCase):
+    def test_home_page_contains_css(self):
+        response = self.client.get('')
+        html = response.content.decode('utf8')
+        self.assertIn('<link rel="stylesheet" href="/static/bootstrap.min.css">', html)
+        self.assertIn('<link rel="stylesheet" href="/static/styles.css">', html)
