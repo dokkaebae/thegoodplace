@@ -2,40 +2,43 @@
 <html>
   <head>
     <title>Orders - Create</title>
+
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/styles.css">
   </head>
 
   <body>
-    <div>
+    <div class="col-lg-10 col-lg-10 mx-auto container">
       <h1 id="page_header">Orders - Create</h1>
     </div>
 
-    <div>
+    <div class="col-lg-10 col-lg-10 mx-auto container">
       <form>
-        <div>
+        <div class="form-group">
           <label>Customer Name</label>
-          <input type="text" placeholder="Insert name of the customer">
+          <input type="text" class="form-control" placeholder="Insert name of the customer">
         </div>
-        <div>
+        <div class="form-group">
           <label>Size</label>
-          <input type="text" placeholder="Insert size">
+          <input type="text" class="form-control" placeholder="Insert size">
         </div>
-        <div>
+        <div class="form-group">
           <label>Base Recipe</label>
-          <input type="text" placeholder="Insert base recipe">
+          <input type="text" class="form-control" placeholder="Insert base recipe">
         </div>
-        <div>
+        <div class="form-group">
           <label>Customization</label>
-          <input type="text" placeholder="Insert customization">
+          <input type="text" class="form-control" placeholder="Insert customization">
         </div>
         <div>
-          <button type="submit">Confirm Order</button>
+          <button type="submit" class="btn-block btn-outline-success">Confirm Order</button>
         </div>
       </form>
     </div>
 
-    <div>
+    <div class="col-lg-10 col-lg-10 mx-auto container">
       <form method="get" action="http://localhost:8000/orders-list">
-        <button type="submit" id="back_button">Back to List</button>
+        <button type="submit" class="btn-block btn-outline-danger" id="back_button">Back to List</button>
       </form>
     </div>
   </body>
