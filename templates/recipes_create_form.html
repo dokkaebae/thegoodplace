@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Recipes - Create</title>
+  </head>
+
+  <body>
+    <div>
+      <h1 id="page_header">Recipes - Create</h1>
+    </div>
+
+    <div>
+      <form>
+        <div>
+          <label>New recipe</label>
+          <input type="text" placeholder="Insert name of the recipe">
+        </div>
+        <div>
+          <label>Recipe field</label>
+          <input type="text" placeholder="Insert field">
+        </div>
+        <div>
+          <label>Recipe field</label>
+          <input type="text" placeholder="Insert field">
+        </div>
+        <div>
+          <button type="submit">Finish Creating Recipe</button>
+        </div>
+      </form>
+    </div>
+
+    <div>
+      <form method="get" action="http://localhost:8000/recipes-list">
+        <button type="submit" id="back_button">Back to List</button>
+      </form>
+    </div>
+  </body>
+</html>
