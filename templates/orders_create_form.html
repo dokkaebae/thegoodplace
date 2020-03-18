@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Orders - Create</title>
+  </head>
+
+  <body>
+    <div>
+      <h1 id="page_header">Orders - Create</h1>
+    </div>
+
+    <div>
+      <form>
+        <div>
+          <label>Customer Name</label>
+          <input type="text" placeholder="Insert name of the customer">
+        </div>
+        <div>
+          <label>Size</label>
+          <input type="text" placeholder="Insert size">
+        </div>
+        <div>
+          <label>Base Recipe</label>
+          <input type="text" placeholder="Insert base recipe">
+        </div>
+        <div>
+          <label>Customization</label>
+          <input type="text" placeholder="Insert customization">
+        </div>
+        <div>
+          <button type="submit">Confirm Order</button>
+        </div>
+      </form>
+    </div>
+
+    <div>
+      <form method="get" action="http://localhost:8000/orders-list">
+        <button type="submit" id="back_button">Back to List</button>
+      </form>
+    </div>
+  </body>
+</html>

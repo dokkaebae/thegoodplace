@@ -15,6 +15,7 @@ from .views import RecipesCreateView
 from .views import OrdersListView
 from .views import OrdersDetailView
 from .views import OrdersUpdateView
+from .views import OrdersCreateView
 
 urlpatterns = [
     path('', HomePageView.as_view()),
@@ -28,5 +29,6 @@ urlpatterns = [
     path('recipes-create', RecipesCreateView.as_view()),
     path('orders-list', OrdersListView.as_view()),
     path('orders-detail', OrdersDetailView.as_view()),
-    path('orders-update', OrdersUpdateView.as_view())
+    path('orders-update', OrdersUpdateView.as_view()),
+    path('orders-create', OrdersCreateView.as_view())
 ]

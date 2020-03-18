@@ -35,3 +35,6 @@ class OrdersDetailView(TemplateView):
 
 class OrdersUpdateView(TemplateView):
     template_name = "orders_update_form.html"
+
+class OrdersCreateView(TemplateView):
+    template_name = "orders_create_form.html"

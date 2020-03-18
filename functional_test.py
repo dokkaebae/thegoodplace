@@ -350,7 +350,7 @@ class NewVisitorTest(unittest.TestCase):
         back_button_to_home_from_orders.click()
         time.sleep(1)
         self.assertEqual(
-            "http://localhost:8000",
+            "http://localhost:8000/",
             self.browser.current_url
         )
 
