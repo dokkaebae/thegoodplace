@@ -17,3 +17,6 @@ class IngredientsCreateView(TemplateView):
 
 class RecipesListView(TemplateView):
     template_name = "recipes_list.html"
+
+class RecipesDetailView(TemplateView):
+    template_name = "recipes_detail.html"
