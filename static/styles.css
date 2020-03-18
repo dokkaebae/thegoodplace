@@ -8,6 +8,10 @@ th{
   text-align: center;
 }
 
+td{
+  text-align: center;
+}
+
 h2 {
   text-align: center;
 }
@@ -19,7 +23,12 @@ h2 {
 }
 
 .table{
-  font-size: 20px;
+  font-size: 15px;
+  padding: 5px;
+}
+
+.button_container {
+  margin: 10px;
 }
 
 #page_header {
