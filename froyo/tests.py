@@ -35,3 +35,8 @@ class RecipesDetailPageTest(TestCase):
     def test_recipes_detail_page_returns_correct_html(self):
         response = self.client.get('/recipes-detail')
         self.assertTemplateUsed(response, 'recipes_detail.html')
+
+class RecipesUpdatePageTest(TestCase):
+    def test_recipes_update_page_returns_correct_html(self):
+        response = self.client.get('/recipes-update')
+        self.assertTemplateUsed(response, 'recipes_update.html')
