@@ -40,3 +40,8 @@ class RecipesUpdatePageTest(TestCase):
     def test_recipes_update_page_returns_correct_html(self):
         response = self.client.get('/recipes-update')
         self.assertTemplateUsed(response, 'recipes_update_form.html')
+
+class RecipesCreatePageTest(TestCase):
+    def test_recipes_create_page_returns_correct_html(self):
+        response = self.client.get('/recipes-create')
+        self.assertTemplateUsed(response, 'recipes_create_form.html')
