@@ -29,3 +29,6 @@ class RecipesCreateView(TemplateView):
 
 class OrdersListView(TemplateView):
     template_name = "orders_list.html"
+
+class OrdersDetailView(TemplateView):
+    template_name = "orders_detail.html"
