@@ -26,3 +26,6 @@ class IngredientsDetailView(TemplateView):
 
 class IngredientsUpdateView(TemplateView):
     template_name = "ingredients_update_form.html"
+
+class IngredientsCreateView(TemplateView):
+    template_name = "ingredients_create_form.html"
