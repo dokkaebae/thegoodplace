@@ -39,4 +39,4 @@ class RecipesDetailPageTest(TestCase):
 class RecipesUpdatePageTest(TestCase):
     def test_recipes_update_page_returns_correct_html(self):
         response = self.client.get('/recipes-update')
-        self.assertTemplateUsed(response, 'recipes_update.html')
+        self.assertTemplateUsed(response, 'recipes_update_form.html')

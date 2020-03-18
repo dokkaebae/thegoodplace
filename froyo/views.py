@@ -20,3 +20,6 @@ class RecipesListView(TemplateView):
 
 class RecipesDetailView(TemplateView):
     template_name = "recipes_detail.html"
+
+class RecipesUpdateView(TemplateView):
+    template_name = "recipes_update_form.html"
